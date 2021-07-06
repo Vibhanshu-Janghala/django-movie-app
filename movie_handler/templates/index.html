@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <table class="table">
+<div class="main-title">Movies</div>
+    <table class="table box-style">
         <thead>
         <tr>
             <th>Title</th>
@@ -10,9 +11,22 @@
         </tr>
         </thead>
         <tbody>
+        <tr>
+            <td>
+                <a href="/add/"> Add Item</a>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+        </tr>
         {% for movie in movies %}
             <tr>
-                <td>{{ movie.title }}</td>
+                <td>
+                    <a href="{% url "movie_detail" movie.title %}">
+                        {{ movie.title }}
+                    </a>
+                </td>
                 <td>{{ movie.genre }}</td>
                 <td>{{ movie.release_year }}</td>
             </tr>

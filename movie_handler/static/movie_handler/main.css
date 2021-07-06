@@ -1,0 +1,49 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+    width: 100%;
+  background-color: #cbcaca;
+  font-weight: 500;
+    font-size: 18px;
+}
+div.main-content{
+    width: 100%;
+    margin: 2% 0%;
+    padding: 0% 3%;
+    height: 98%;
+}
+div.main-title{
+    text-align: center;
+    margin-bottom: 1%;
+    font-size: 26px;
+}
+.box-style{
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+}
+.table{
+    border: transparent;
+    overflow-x: auto;
+}
+.card>span{
+    margin-top: 2%;
+    color: rgb(94, 92, 92)
+}
+.card>a{
+    width: 100%;
+    margin-top: 12px;
+    text-align: center;
+}
+.box-style>input{
+    display: block;
+}

@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings  # new
 from django.conf.urls.static import static  # new
+from api.models import MovieResource
 
+movie_resource = MovieResource()
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("movies/", include("movie_handler.urls"))
+    path("", include("movie_handler.urls"))
 ]
 if settings.DEBUG:  # new
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

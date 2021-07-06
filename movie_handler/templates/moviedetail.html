@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-    <div>
-    <img src="{{ movie.img.url }}"  alt="No Image Available"/>
-    <h1>{{ movie.title }}</h1>
-    <h2>{{ movie.story_line }}</h2>
-    <div>{{ movie.genre }}</div>
-    <span>{{ movie.release_year }}</span>
-    <span>{{ movie.date_created }}</span>
+    <div class="main-title">Details</div>
+    <div class="card box-style">
+        <img src="{{ movie.img.url }}" alt="No Image Available"/>
+        <span>Title :</span>
+        <h1>{{ movie.title }}</h1>
+        <span>Plot Summary :</span>
+        <h3>{{ movie.story_line }}</h3>
+        <span>Genre :</span>
+        <div>{{ movie.genre }}</div>
+        <span>Release Year :</span>
+        <div>{{ movie.release_year }}</div>
+        <span>Registered At :</span>
+        <div>{{ movie.date_created }}</div>
+        <a href="delete/{{ movie.title }}">Delete</a>
     </div>
 
 {% endblock %}
